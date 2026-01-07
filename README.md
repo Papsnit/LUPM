@@ -14,8 +14,8 @@ Built for **Full Portable** operation from USB media, it ensures data integrity 
 
 ## 🛠 Dependencies & Compilation
 The project relies on the following third-party tools:
-- **[7-Zip](www.7-zip.org):** Used as the core compression and encryption engine (binaries are embedded in Base64 format).
-- **[Win-PS2EXE](github.com):** Used to compile the `.ps1` script into a standalone `.exe` file.
+- **[7-Zip](https://github.com/ip7z/7zip):** Used as the core compression and encryption engine (binaries are embedded in Base64 format).
+- **[Win-PS2EXE](https://github.com/MScholtes/Win-PS2EXE):** Used to compile the `.ps1` script into a standalone `.exe` file.
 
 ## 🛡 Security & Synchronization Logic
 To maximize USB flash memory lifespan and prevent data corruption:
@@ -26,7 +26,7 @@ To maximize USB flash memory lifespan and prevent data corruption:
 
 ## 👥 Credits & Collaboration
 - **Lead Developer:** M.Giuliano
-- **Code Reviewer & Bugfixing:** nothing7209 (https://github.com/nothing7209) – Special thanks for the comprehensive code review and security logic optimization.
+- **Code Reviewer & Bugfixing:** **[nothing7209](https://github.com/nothing7209):** – Special thanks for the comprehensive code review and security logic optimization.
 
 ## ⚖️ License
 This project is licensed under the **GPL-3.0 License**. See the `LICENSE` file for details.
