@@ -1,0 +1,62 @@
+Portable Operations (English)
+1. Optimization for Removable Media (USB)
+The script is engineered to maximize flash memory lifespan and ensure data persistence even in case of accidental disconnection:
+-Write-Cycle Reduction: Through Session Buffering, the script avoids constantly rewriting the entire Database.7z archive. It writes only small buffer files, minimizing flash cell wear.
+-Relative Pathing: The software automatically detects the USB drive letter via $BasePath. The hidden .data folder always resides on the portable media and never on the host PC.
+-Zero-Footprint: No traces are left on the host computer. Necessary temporary files (7-Zip) are extracted to the system’s RAM/Temp and wiped immediately upon closure.
+2. Database Anti-Corruption Protocol
+The risk of “removal corruption” (unplugging the USB during write) is mitigated by the sync logic:
+-Deferred Synchronization: Since the merge into the main archive occurs only at startup, Database.7z remains in a read-only state most of the time, protecting historical logs.
+3. High-Entropy Password Generator
+The New-RandomPassword algorithm is tuned for 2026 security standards:
+-Mandatory Enforcement: Guarantees 1 uppercase, 1 lowercase, 1 digit, and 1 special symbol.
+-Indeterminism: Using Sort-Object {Get-Random} after selection ensures the password structure is never predictable, neutralizing pattern-based dictionary attacks.
+
+  Portable Specifications 2026
+Storage: Hidden folder .data/ located on the USB root.
+Temp: %TEMP%\Embedded7Zip_UserPwdMgr (with auto-cleanup).
+Integrity: AES-256 encryption + Atomic buffering system.
+
+
+Operatività Portable (Italiano)
+1. Ottimizzazione per Supporti Removibili (USB)
+Lo script è stato ingegnerizzato per massimizzare la vita utile delle memorie flash e garantire la persistenza dei dati anche in caso di disconnessione accidentale:
+-Riduzione Cicli di Scrittura: Grazie al sistema di Session Buffering, lo script evita di riscrivere continuamente l'intero archivio Database.7z. 
+Scrive solo piccoli file di buffer (SessionXXX.7z), minimizzando l'usura della cella flash.
+-Percorsi Relativi: Il software identifica automaticamente la lettera dell'unità USB tramite la variabile $BasePath, 
+garantendo che la cartella nascosta .data risieda sempre sul supporto portable e mai sull'host locale.
+-Zero-Footprint sull'Host: Non vengono lasciate tracce sul PC ospite. I file temporanei necessari (7-Zip) vengono estratti nella RAM/Temp del sistema e cancellati istantaneamente alla chiusura.
+2. Protocollo Anti-Corruzione Database
+Il rischio di "corruzione da rimozione" (unplug della USB durante la scrittura) è mitigato dalla logica di sincronizzazione:
+-Sincronizzazione Differita: Poiché il merge nell'archivio principale avviene solo all'avvio, il file Database.7z rimane in sola lettura per la maggior parte del tempo, 
+proteggendo lo storico dei log da eventuali picchi di tensione o rimozioni del supporto.
+3. Generatore di Password ad Alta Entropia
+L'algoritmo New-RandomPassword è stato tarato per standard di sicurezza 2026:
+-Selezione Obbligatoria: Forza l'uso di 1 maiuscola, 1 minuscola, 1 numero e 1 simbolo speciale.
+-Indeterminismo: L'uso di Sort-Object {Get-Random} dopo la selezione garantisce che la struttura della password non sia mai la stessa, rendendo inutili gli attacchi basati su dizionari di pattern.
+ 
+Specifiche Portable 2026 (Riepilogo)
+Storage: Cartella nascosta .data/ su root USB.
+Temp: %TEMP%\Embedded7Zip_UserPwdMgr (auto-pulizia).
+Integrità: AES-256 + Buffer atomici.
+
+
+Portable-Betrieb (Deutsch)
+1. Optimierung für Wechseldatenträger (USB)
+Das Skript wurde entwickelt, um die Lebensdauer von Flash-Speichern zu maximieren und die Datensicherheit bei plötzlichem Entfernen zu gewährleisten:
+-Schreibzyklus-Reduzierung: Durch das Session Buffering wird das ständige Neuschreiben des gesamten Database.7z-Archivs vermieden. Es werden nur kleine Pufferdateien geschrieben, 
+was den Verschleiß des USB-Sticks minimiert.
+-Relative Pfade: Die Software erkennt automatisch den USB-Laufwerksbuchstaben über $BasePath. Der versteckte Ordner .data verbleibt immer auf dem Stick und niemals auf dem Host-PC.
+-Zero-Footprint: Es bleiben keine Spuren auf dem Gast-PC zurück. Temporäre Dateien werden im RAM/Temp-Verzeichnis des Systems verarbeitet und beim Beenden gelöscht.
+2. Anti-Korruptions-Protokoll
+Das Risiko einer Beschädigung durch plötzliches Abziehen des Sticks wird durch die Synchronisationslogik minimiert:
+-Verzögerte Synchronisation: Da der Merge in das Hauptarchiv nur beim Start erfolgt, bleibt Database.7z die meiste Zeit schreibgeschützt, was die historischen Daten schützt.
+3. Passwortgenerator mit hoher Entropie
+Der New-RandomPassword-Algorithmus wurde gemäß dem Sicherheitsstandard 2026 kalibriert:
+- Obligatorische Auswahl: Erzwingt die Verwendung von je einem Großbuchstaben, einem Kleinbuchstaben, einer Zahl und einem Sonderzeichen.
+- Indeterminismus: Die Verwendung von Sort-Object {Get-Random} nach der Auswahl stellt sicher, dass die Passwortstruktur niemals identisch ist und somit Wörterbuchangriffe wirkungslos bleiben.
+ 
+Portable-Spezifikationen 2026
+Speicher: Versteckter Ordner .data/ im USB-Stammverzeichnis (Root).
+Temp: %TEMP%\Embedded7Zip_UserPwdMgr (mit automatischer Bereinigung).
+Integrität: AES-256 Verschlüsselung + Atomic buffering system.

@@ -1,0 +1,50 @@
+Portable EXE Version (Updated 2026)
+1. Quick Start
+Copy LocalUserPwdMgr.exe to your USB drive.
+Always Run as Administrator (Right-click -> Run as administrator).
+On first run, set a Master Password (min. 10 characters).
+2. Password Management
+Select a user and use “Generate Password” for 2026-compliant security.
+Click “Apply Password” to commit the change. The log is automatically stored in the protected session buffer.
+3. Using the Sync Function (Security Note)
+The Sync button should be used only if strictly necessary (e.g., if you need to immediately view newly created logs from another device without restarting the app).
+DO NOT use Sync as a standard exit procedure. The script automatically handles data consolidation safely during the next startup to minimize corruption risks.
+4. Safe USB Removal
+To exit the program, use the “Close” button only.
+After closing, use the Windows “Safely Remove Hardware” notification before physically unplugging the USB drive.
+
+
+Versione Portable EXE (Aggiornata 2026)
+1. Avvio Rapido
+Copia LocalUserPwdMgr.exe sulla chiavetta USB.
+Esegui sempre come Amministratore (Tasto destro -> Esegui come amministratore).
+Al primo avvio imposta una Master Password di almeno 10 caratteri.
+2. Gestione Password
+Seleziona l'utente e usa "Generate Password" per una sicurezza garantita dagli standard 2026.
+Clicca "Apply Password" per rendere effettiva la modifica. Il log verrà salvato automaticamente nel buffer di sessione protetto.
+3. Utilizzo della Funzione Sync (Nota di Sicurezza)
+Il tasto Sync deve essere utilizzato solo se strettamente necessario (ad esempio se si devono consultare immediatamente i log appena creati da un altro dispositivo senza riavviare l'app).
+NON utilizzare Sync come procedura di chiusura. Lo script gestisce autonomamente il consolidamento dei dati in modo sicuro al riavvio successivo per minimizzare i rischi di corruzione.
+4. Rimozione Sicura della USB
+Per chiudere il programma, usa esclusivamente il tasto "Close".
+Una volta chiuso il programma, utilizza la funzione di sistema "Rimozione sicura dell'hardware" di Windows prima di estrarre fisicamente la chiavetta.
+
+
+Portable EXE-Version (Update 2026)
+1. Schnellstart
+Kopieren Sie LocalUserPwdMgr.exe auf Ihren USB-Stick.
+Immer als Administrator ausführen (Rechtsklick -> Als Administrator ausführen).
+Legen Sie beim ersten Start ein Master-Passwort fest (mind. 10 Zeichen).
+2. Passwort-Verwaltung
+Wählen Sie einen Benutzer und nutzen Sie “Generate Password” für Sicherheit nach 2026-Standard.
+Klicken Sie auf “Apply Password”. Das Protokoll wird automatisch im geschützten Sitzungspuffer gespeichert.
+3. Verwendung der Sync-Funktion (Sicherheitshinweis)
+Die Sync-Taste sollte nur bei absolutem Bedarf verwendet werden (z. B. wenn neu erstellte Protokolle sofort an einem anderen Gerät eingesehen werden müssen, ohne die App neu zu starten).
+Nutzen Sie Sync NICHT als Standard-Beendigung. Das Skript konsolidiert die Daten sicher beim nächsten Start, um Korruptionsrisiken zu minimieren.
+4. Sichereres Entfernen des USB-Sticks
+Beenden Sie das Programm ausschließlich über die Schaltfläche “Close”.
+Nutzen Sie nach dem Schließen die Windows-Funktion “Hardware sicher entfernen”, bevor Sie den USB-Stick physisch abziehen.
+
+
+
+
