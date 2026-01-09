@@ -11,8 +11,30 @@ The risk of “removal corruption” (unplugging the USB during write) is mitiga
 The New-RandomPassword algorithm is tuned for 2026 security standards:
 -Mandatory Enforcement: Guarantees 1 uppercase, 1 lowercase, 1 digit, and 1 special symbol.
 -Indeterminism: Using Sort-Object {Get-Random} after selection ensures the password structure is never predictable, neutralizing pattern-based dictionary attacks.
-
-  Portable Specifications 2026
+4. Local Group Management (v1.1)
+The 1.1 update introduces full support for managing local group memberships directly from the portable interface.
+4.1 Overview
+The system now allows administrators to:
+-Add a user to any existing local group
+-Remove a user from a local group
+-Validate group existence before performing operations
+-Prevent inconsistent states (e.g., removing a user who is not a member)
+All operations are executed using secure PowerShell calls with elevated privileges.
+4.2 Logging
+Every group‑related action is now included in the encrypted log archive:
+-Group assignment
+-Group removal
+-Validation errors
+-Operation confirmations
+Logs remain protected with AES‑256 encryption and follow the same atomic buffering logic used for password operations.
+4.3 Portable Behavior
+Group operations follow the same safety model as password operations:
+-No writes occur directly on the main archive during the session
+-All changes are stored in session buffers
+-Merging occurs only at application startup
+This ensures maximum USB integrity and prevents corruption during unexpected removal.
+  
+Portable Specifications 2026
 Storage: Hidden folder .data/ located on the USB root.
 Temp: %TEMP%\Embedded7Zip_UserPwdMgr (with auto-cleanup).
 Integrity: AES-256 encryption + Atomic buffering system.
@@ -34,7 +56,29 @@ proteggendo lo storico dei log da eventuali picchi di tensione o rimozioni del s
 L'algoritmo New-RandomPassword è stato tarato per standard di sicurezza 2026:
 -Selezione Obbligatoria: Forza l'uso di 1 maiuscola, 1 minuscola, 1 numero e 1 simbolo speciale.
 -Indeterminismo: L'uso di Sort-Object {Get-Random} dopo la selezione garantisce che la struttura della password non sia mai la stessa, rendendo inutili gli attacchi basati su dizionari di pattern.
- 
+4. Gestione dei Gruppi Locali (v1.1)
+L’aggiornamento 1.1 introduce il supporto completo alla gestione delle membership dei gruppi locali direttamente dall’interfaccia portable.
+4.1 Panoramica
+Il sistema consente ora di:
+-Aggiungere un utente a un gruppo locale esistente
+-Rimuovere un utente da un gruppo locale
+-Validare l’esistenza del gruppo prima dell’operazione
+-Evitare stati incoerenti (es. rimozione di un utente non appartenente al gruppo)
+Tutte le operazioni vengono eseguite tramite chiamate PowerShell sicure con privilegi elevati.
+4.2 Logging
+Ogni operazione relativa ai gruppi viene ora registrata nei log cifrati:
+-Assegnazione al gruppo
+-Rimozione dal gruppo
+-Errori di validazione
+-Conferme delle operazioni
+I log rimangono protetti con cifratura AES‑256 e seguono la stessa logica di buffering atomico usata per le password.
+4.3 Comportamento Portable
+Le operazioni sui gruppi seguono lo stesso modello di sicurezza delle operazioni sulle password:
+-Nessuna scrittura diretta sull’archivio principale durante la sessione
+-Tutte le modifiche vengono salvate nei buffer di sessione
+-Il merge avviene solo all’avvio dell’applicazione
+Questo garantisce massima integrità del supporto USB e previene corruzioni in caso di rimozione improvvisa.
+
 Specifiche Portable 2026 (Riepilogo)
 Storage: Cartella nascosta .data/ su root USB.
 Temp: %TEMP%\Embedded7Zip_UserPwdMgr (auto-pulizia).
@@ -55,7 +99,29 @@ Das Risiko einer Beschädigung durch plötzliches Abziehen des Sticks wird durch
 Der New-RandomPassword-Algorithmus wurde gemäß dem Sicherheitsstandard 2026 kalibriert:
 - Obligatorische Auswahl: Erzwingt die Verwendung von je einem Großbuchstaben, einem Kleinbuchstaben, einer Zahl und einem Sonderzeichen.
 - Indeterminismus: Die Verwendung von Sort-Object {Get-Random} nach der Auswahl stellt sicher, dass die Passwortstruktur niemals identisch ist und somit Wörterbuchangriffe wirkungslos bleiben.
- 
+ 4. Verwaltung Lokaler Gruppen (v1.1)
+Mit Version 1.1 wurde die vollständige Unterstützung zur Verwaltung von lokalen Gruppenmitgliedschaften direkt über die portable Oberfläche eingeführt.
+4.1 Übersicht
+Das System ermöglicht nun:
+-Hinzufügen eines Benutzers zu einer lokalen Gruppe
+-Entfernen eines Benutzers aus einer lokalen Gruppe
+-Validierung der Gruppexistenz vor der Ausführung
+-Vermeidung inkonsistenter Zustände (z. B. Entfernen eines Nichtmitglieds)
+Alle Vorgänge werden über sichere PowerShell‑Befehle mit erhöhten Rechten ausgeführt.
+4.2 Logging
+Alle gruppenbezogenen Aktionen werden nun im verschlüsselten Log‑Archiv gespeichert:
+-Gruppen‑Zuordnung
+-Gruppen‑Entfernung
+-Validierungsfehler
+-Bestätigungen der Vorgänge
+Die Logs bleiben durch AES‑256 geschützt und folgen derselben atomaren Buffer‑Logik wie die Passwortoperationen.
+4.3 Portable Verhalten
+Gruppenoperationen folgen demselben Sicherheitsmodell wie Passwortoperationen:
+-Keine direkten Schreibvorgänge am Hauptarchiv während der Sitzung
+-Alle Änderungen werden in Session‑Pufferdateien gespeichert
+-Der Merge erfolgt ausschließlich beim Programmstart
+Dies gewährleistet maximale USB‑Integrität und verhindert Datenkorruption bei unerwartetem Entfernen des Laufwerks.
+
 Portable-Spezifikationen 2026
 Speicher: Versteckter Ordner .data/ im USB-Stammverzeichnis (Root).
 Temp: %TEMP%\Embedded7Zip_UserPwdMgr (mit automatischer Bereinigung).
