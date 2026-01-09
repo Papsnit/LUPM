@@ -6,7 +6,7 @@
   - Ability to assign or revoke membership in local groups for any user.
   - Automatic validation of group existence and current membership status.
 - **Extended Logging**
-  - All group‑related operations (add, remove, errors, confirmations) are now recorded inside the encrypted logs.
+  - All group‑related operations (add, remove, state) are now recorded inside the encrypted logs.
   - Improved internal log structure for better traceability.
 
 ### **Improved**
