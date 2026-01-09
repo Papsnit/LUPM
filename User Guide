@@ -1,4 +1,4 @@
-Portable EXE Version (Updated 2026)
+🇬🇧 Portable EXE Version_1.1 (Updated 2026)
 1. Quick Start
 Copy LocalUserPwdMgr.exe to your USB drive.
 Always Run as Administrator (Right-click -> Run as administrator).
@@ -12,9 +12,31 @@ DO NOT use Sync as a standard exit procedure. The script automatically handles d
 4. Safe USB Removal
 To exit the program, use the “Close” button only.
 After closing, use the Windows “Safely Remove Hardware” notification before physically unplugging the USB drive.
+5. Local Group Management (New in v1.1)
+5.1 Opening the Group Manager
+Select a user from the main list.
+Click Manage Groups.
+A window will appear showing all local groups available on the system.
+5.2 How the Interface Works
+The list shows all local groups.
+Groups where the user is already a member are pre‑checked.
+You can check or uncheck groups to add or remove the user.
+5.3 Applying Changes
+When you click Apply:
+The user is added to the groups you selected.
+The user is removed from groups you unchecked.
+A confirmation message appears once the update is complete.
+5.4 Automatic Refresh
+After closing the Group Manager:
+The user list updates automatically.
+The updated group memberships appear next to each username.
+5.5 Logging
+All group operations are recorded in the encrypted session buffer:
+Added groups
+Removed groups
+Logs are merged into the main archive at the next application startup.
 
-
-Versione Portable EXE (Aggiornata 2026)
+🇮🇹 Versione Portable_1.1 EXE (Aggiornata 2026)
 1. Avvio Rapido
 Copia LocalUserPwdMgr.exe sulla chiavetta USB.
 Esegui sempre come Amministratore (Tasto destro -> Esegui come amministratore).
@@ -28,9 +50,31 @@ NON utilizzare Sync come procedura di chiusura. Lo script gestisce autonomament
 4. Rimozione Sicura della USB
 Per chiudere il programma, usa esclusivamente il tasto "Close".
 Una volta chiuso il programma, utilizza la funzione di sistema "Rimozione sicura dell'hardware" di Windows prima di estrarre fisicamente la chiavetta.
+5. Gestione dei Gruppi Locali (Novità v1.1)
+5.1 Apertura del Gestore Gruppi
+Seleziona un utente dalla lista principale.
+Clicca su Gestione Gruppi.
+Si aprirà una finestra con tutti i gruppi locali disponibili.
+5.2 Funzionamento dell’Interfaccia
+L’elenco mostra tutti i gruppi locali.
+I gruppi a cui l’utente appartiene già sono selezionati.
+Puoi selezionare o deselezionare i gruppi per aggiungere o rimuovere l’utente.
+5.3 Applicazione delle Modifiche
+Quando premi Apply:
+L’utente viene aggiunto ai gruppi selezionati.
+L’utente viene rimosso dai gruppi deselezionati.
+Un messaggio conferma l’avvenuto aggiornamento.
+5.4 Aggiornamento Automatico
+Alla chiusura del Gestore Gruppi:
+La lista utenti viene aggiornata automaticamente.
+Le nuove membership vengono mostrate accanto al nome utente.
+5.5 Logging
+Tutte le operazioni sui gruppi vengono registrate nel buffer di sessione cifrato:
+Gruppi aggiunti
+Gruppi rimossi
+Il merge avviene al successivo avvio dell’applicazione.
 
-
-Portable EXE-Version (Update 2026)
+🇩🇪 Portable EXE-Version_1.1 (Update 2026)
 1. Schnellstart
 Kopieren Sie LocalUserPwdMgr.exe auf Ihren USB-Stick.
 Immer als Administrator ausführen (Rechtsklick -> Als Administrator ausführen).
@@ -44,7 +88,27 @@ Nutzen Sie Sync NICHT als Standard-Beendigung. Das Skript konsolidiert die Daten
 4. Sichereres Entfernen des USB-Sticks
 Beenden Sie das Programm ausschließlich über die Schaltfläche “Close”.
 Nutzen Sie nach dem Schließen die Windows-Funktion “Hardware sicher entfernen”, bevor Sie den USB-Stick physisch abziehen.
-
-
-
+5. Verwaltung Lokaler Gruppen (Neu in v1.1)
+5.1 Öffnen des Gruppenmanagers
+Wählen Sie einen Benutzer aus der Hauptliste.
+Klicken Sie auf Gruppen verwalten.
+Ein Fenster erscheint mit allen verfügbaren lokalen Gruppen.
+5.2 Funktionsweise der Oberfläche
+Die Liste zeigt alle lokalen Gruppen.
+Gruppen, in denen der Benutzer bereits Mitglied ist, sind markiert.
+Sie können Gruppen an- oder abwählen, um den Benutzer hinzuzufügen oder zu entfernen.
+5.3 Änderungen Anwenden
+Beim Klick auf Apply:
+Der Benutzer wird zu den ausgewählten Gruppen hinzugefügt.
+Der Benutzer wird aus den abgewählten Gruppen entfernt.
+Eine Bestätigung erscheint nach Abschluss der Aktualisierung.
+5.4 Automatische Aktualisierung
+Nach dem Schließen des Gruppenmanagers:
+Die Benutzerliste wird automatisch aktualisiert.
+Die neuen Gruppenmitgliedschaften erscheinen neben dem Benutzernamen.
+5.5 Logging
+Alle gruppenbezogenen Aktionen werden im verschlüsselten Sitzungspuffer gespeichert:
+Hinzugefügte Gruppen
+Entfernte Gruppen
+Die Zusammenführung erfolgt beim nächsten Programmstart.
 
