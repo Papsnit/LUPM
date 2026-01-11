@@ -1,4 +1,4 @@
-Local User Password Manager (LUPM) v1.0 - 2026
+Local User Password Manager (LUPM) v1.2 - 2026
              
 **LUPM** is an advanced administrative utility designed for the secure management of local user account passwords on Windows systems. 
 Built for **Full Portable** operation from USB media, it ensures data integrity and operational confidentiality through military-grade encryption.
@@ -18,7 +18,8 @@ Administrators can now add or remove users from local groups directly from the i
 The system validates group existence, membership status, and prevents inconsistent states.
 
 Extended Logging System:  
-All group‑related operations (assignments, removals) are now included in the encrypted log archive, ensuring complete traceability with the same AES‑256 protection used for password operations.
+All group‑related operations (assignments, removals) are now included in the encrypted log archive, 
+ensuring complete traceability with the same AES‑256 protection used for password operations.
 
 🆕 What’s New in Version 1.2
 -Multi‑log export support
