@@ -18,7 +18,15 @@ Administrators can now add or remove users from local groups directly from the i
 The system validates group existence, membership status, and prevents inconsistent states.
 
 Extended Logging System:  
-All group‑related operations (assignments, removals, errors, confirmations) are now included in the encrypted log archive, ensuring complete traceability with the same AES‑256 protection used for password operations.
+All group‑related operations (assignments, removals) are now included in the encrypted log archive, ensuring complete traceability with the same AES‑256 protection used for password operations.
+
+🆕 What’s New in Version 1.2
+-Multi‑log export support
+-Improved group‑change logging (added/removed/final groups)
+-Stronger archive password policy (minimum 14 chars, full complexity)
+-Refined UI and workflow improvements
+-Bug fixes and internal optimizations
+-For full details, see the dedicated changelog.
 
 ## 🛠 Dependencies & Compilation
 The project relies on the following third-party tools:
