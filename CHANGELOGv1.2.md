@@ -1,5 +1,5 @@
-📜 Changelog
-v1.2 – 2026
+📜 Changelog    v1.2 – 2026
+
 🚀 New Features
 Multi‑log export support  
 Added the Export Selected feature, allowing users to select and export multiple log files at once.
