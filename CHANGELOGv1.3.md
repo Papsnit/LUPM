@@ -1,6 +1,7 @@
 # 📄 CHANGELOG
 
-## v1.3.0 – Sync Button Safety & UX Improvements
+## v1.3-2026
+## Sync Button Safety & UX Improvements
 
 ### Added
 - Introduced a new **two‑step confirmation system** for the *Sync Logs* button  
