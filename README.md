@@ -29,7 +29,7 @@ ensuring complete traceability with the same AES‑256 protection used for passw
 - For full details, see the dedicated changelog.
 
 ## 🆕 What’s New in Version 1.3
-- **Introduced a new two‑step confirmation system for the *Sync Logs* button ** 
+- Introduced a new **two‑step confirmation system** for the *Sync Logs* button
   - First click arms the button  
   - Second click executes the sync  
 - Added a **5‑second automatic timeout** that resets the button if the user does not confirm in time  
