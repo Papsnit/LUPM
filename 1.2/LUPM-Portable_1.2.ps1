@@ -13,7 +13,8 @@
 #
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
-#----------------------------------------------------------------------------Add-Type -AssemblyName System.Windows.Forms
+#----------------------------------------------------------------------------
+Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 Add-Type -AssemblyName Microsoft.VisualBasic
 Add-Type @"
@@ -1646,5 +1647,6 @@ $aboutForm.ShowDialog()
 $form.Controls.Add($btnAbout)
 $form.ShowDialog()
 Cleanup-Embedded7Zip
+
 
 
