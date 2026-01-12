@@ -48,5 +48,5 @@ To maximize USB flash memory lifespan and prevent data corruption:
 ## ⚖️ License
 This project is licensed under the **GPL-3.0 License**. See the `LICENSE` file for details.
 
----
+------------------------------------------
 *Note: Administrator privileges are required to modify system passwords.*
