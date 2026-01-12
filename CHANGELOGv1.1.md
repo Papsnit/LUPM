@@ -25,4 +25,4 @@
 - Advanced password generator compliant with 2026 standards.
 - AES‑256 encrypted logs using the 7‑Zip engine.
 - Full‑portable mode with *Atomic Buffering*.
-- Multilingual support.
+- Multilingual support (EN,IT,DE,PT,ES,FR).
