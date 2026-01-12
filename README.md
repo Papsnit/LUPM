@@ -28,6 +28,19 @@ ensuring complete traceability with the same AES‑256 protection used for passw
 - Bug fixes and internal optimizations.
 - For full details, see the dedicated changelog.
 
+## 🆕 What’s New in Version 1.3
+- **Introduced a new two‑step confirmation system for the *Sync Logs* button ** 
+  - First click arms the button  
+  - Second click executes the sync  
+- Added a **5‑second automatic timeout** that resets the button if the user does not confirm in time  
+- Added clear **visual state indicators**:  
+  - **Red** = Locked  
+  - **Green** = Ready to sync  
+- Enhanced user experience by removing modal confirmation dialogs  
+- Reduced accidental sync operations through a more intuitive and visual confirmation flow  
+- Refined event handling and timer logic for better reliability and maintainability  
+- Improved error handling to ensure the Sync button always resets correctly after interruptions   
+
 ## 🛠 Dependencies & Compilation
 The project relies on the following third-party tools:
 - **[7-Zip](https://github.com/ip7z/7zip):** Used as the core compression and encryption engine (binaries are embedded in Base64 format).
