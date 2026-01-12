@@ -2,10 +2,10 @@
 
 ## **v1.2 – 2026**
 🚀 New Features
-- **Multi‑log export support** 
+### **Multi‑log export support** 
 - Added the Export Selected feature, allowing users to select and export     multiple log files at once.
 - Enhanced group‑management logging  
-- **Group changes now generate detailed logs including**
+### **Group changes now generate detailed logs including**
 - Added groups
 - Removed groups
 - Final group membership
