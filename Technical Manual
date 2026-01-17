@@ -1,4 +1,4 @@
-Portable Operations (English)
+GB Portable Operations (English)
 1. Optimization for Removable Media (USB)
 The script is engineered to maximize flash memory lifespan and ensure data persistence even in case of accidental disconnection:
 -Write-Cycle Reduction: Through Session Buffering, the script avoids constantly rewriting the entire Database.7z archive. It writes only small buffer files, minimizing flash cell wear.
@@ -40,7 +40,7 @@ Temp: %TEMP%\Embedded7Zip_UserPwdMgr (with auto-cleanup).
 Integrity: AES-256 encryption + Atomic buffering system.
 
 
-Operatività Portable (Italiano)
+IT Operatività Portable (Italiano)
 1. Ottimizzazione per Supporti Removibili (USB)
 Lo script è stato ingegnerizzato per massimizzare la vita utile delle memorie flash e garantire la persistenza dei dati anche in caso di disconnessione accidentale:
 -Riduzione Cicli di Scrittura: Grazie al sistema di Session Buffering, lo script evita di riscrivere continuamente l'intero archivio Database.7z. 
@@ -85,7 +85,7 @@ Temp: %TEMP%\Embedded7Zip_UserPwdMgr (auto-pulizia).
 Integrità: AES-256 + Buffer atomici.
 
 
-Portable-Betrieb (Deutsch)
+DE Portable-Betrieb (Deutsch)
 1. Optimierung für Wechseldatenträger (USB)
 Das Skript wurde entwickelt, um die Lebensdauer von Flash-Speichern zu maximieren und die Datensicherheit bei plötzlichem Entfernen zu gewährleisten:
 -Schreibzyklus-Reduzierung: Durch das Session Buffering wird das ständige Neuschreiben des gesamten Database.7z-Archivs vermieden. Es werden nur kleine Pufferdateien geschrieben, 
