@@ -2,7 +2,7 @@
 1. Quick Start
 Copy LocalUserPwdMgr.exe to your USB drive.
 Always Run as Administrator (Right-click -> Run as administrator).
-On first run, set a Master Password (min. 10 characters).
+On first run, set a Master Password (min. 14 characters).
 2. Password Management
 Select a user and use “Generate Password” for 2026-compliant security.
 Click “Apply Password” to commit the change. The log is automatically stored in the protected session buffer.
@@ -40,7 +40,7 @@ Logs are merged into the main archive at the next application startup.
 1. Avvio Rapido
 Copia LocalUserPwdMgr.exe sulla chiavetta USB.
 Esegui sempre come Amministratore (Tasto destro -> Esegui come amministratore).
-Al primo avvio imposta una Master Password di almeno 10 caratteri.
+Al primo avvio imposta una Master Password di almeno 14 caratteri.
 2. Gestione Password
 Seleziona l'utente e usa "Generate Password" per una sicurezza garantita dagli standard 2026.
 Clicca "Apply Password" per rendere effettiva la modifica. Il log verrà salvato automaticamente nel buffer di sessione protetto.
@@ -78,7 +78,7 @@ Il merge avviene al successivo avvio dell’applicazione.
 1. Schnellstart
 Kopieren Sie LocalUserPwdMgr.exe auf Ihren USB-Stick.
 Immer als Administrator ausführen (Rechtsklick -> Als Administrator ausführen).
-Legen Sie beim ersten Start ein Master-Passwort fest (mind. 10 Zeichen).
+Legen Sie beim ersten Start ein Master-Passwort fest (mind. 14 Zeichen).
 2. Passwort-Verwaltung
 Wählen Sie einen Benutzer und nutzen Sie “Generate Password” für Sicherheit nach 2026-Standard.
 Klicken Sie auf “Apply Password”. Das Protokoll wird automatisch im geschützten Sitzungspuffer gespeichert.
