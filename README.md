@@ -1,4 +1,4 @@
-Local User Password Manager (LUPM) v1.2 - 2026
+Local User Password Manager (LUPM) v1.3 - 2026
              
 **LUPM** is an advanced administrative utility designed for the secure management of local user account passwords on Windows systems. 
 Built for **Full Portable** operation from USB media, it ensures data integrity and operational confidentiality through military-grade encryption.
